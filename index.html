@@ -24,11 +24,11 @@
 
   </style>
 <body style="background-color:#CECECE;">
-  <h1>Hello Aleksandr Kurochkin!</h1>
+  <h1>Hello Oleksandr Korochkin!</h1>
   <hr>
   <p>The modulation of cloud computing using API requests. You may create a task with different weights (time of execution) and see real-time task execution. All tasks created in separate threads.</p>
   <p>To see this page use <a href="http://35.238.215.222"><b>http://35.238.215.222</b></a></p>
-  <p>To see amount of active threads (tasks) use <a href="http://35.238.215.222/get-active-task-number"><b>http://35.238.215.222/get-active-task-number</b></a></p>
+  <p>To see amount of active threads (tasks) use <a href="http://35.238.215.222/get-active-tasks-count"><b>http://35.238.215.222/get-active-tasks-count</b></a></p>
   <p>To see all created tasks use <a href="http://35.238.215.222/get-all-tasks"><b>http://35.238.215.222/get-all-tasks</b></a></p>
   <p>To add task use POST request on <b>http://35.238.215.222/push-task-with-weight/$weight$</b> where weight is an execution time.<br>
   The easyest way to make POST request - use preconfigured <a href="https://apitester.com/shared/checks/1ec6b2395e7645668aa8dc7fb2b5960d">apitester.com</a> (Don't forget to specify weight)<br>
@@ -44,7 +44,7 @@
         <th>Description</th>
       </tr>
       <tr>
-        <td>/get-active-task-number</td>
+        <td>/get-active-tasks-count</td>
         <td>GET</td>
         <td>Returns active tasks count</td>
       </tr>

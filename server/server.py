@@ -21,8 +21,8 @@ class Server(FlaskView):
     def home(self):
         return MAIN_PAGE
 
-    @route('/get-active-task-number', methods=['GET'])
-    def active_threads_number(self):
+    @route('/get-active-tasks-count', methods=['GET'])
+    def active_threads_count(self):
         return f'<h1>Current threads count is: {Server.controller.get_tasks_number()}</p>'
 
     @route('/get-all-tasks', methods=['GET'])
