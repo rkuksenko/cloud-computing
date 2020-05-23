@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nau
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: roman
+  template:
+    metadata:
+      labels:
+        app: roman
+    spec:
+      containers:
+      - name: web-app
+        image: rkuksenko/nau_web_app:0.4
+        ports:
+        - containerPort: 80
